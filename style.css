@@ -137,3 +137,10 @@ span{
     transition: all 0.5s ease;
     
 }
+.row img{
+    width: 100%;
+    /* height: auto; */
+    height: 200px;
+    border-radius: 27px;
+    /* object-fit: cover; */
+}   
