@@ -136,7 +136,7 @@ span{
 
 .row{
     background: var(--bg-color) ;
-    border-radius: 28px;
+    border-radius: 26px;
     border: 1px solid transparent;
     box-shadow: 0 0 5px var(--main-color);
     padding: 20px;
