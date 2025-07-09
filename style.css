@@ -161,8 +161,8 @@ span{
 }
 
 .row:hover{
-      border: 1px solid var(--main-color);
+    border: 1px solid var(--main-color);
     transform: translateY(-5px) scale(1.04);
-   cursor: pointer;
+    cursor: pointer;
 
 }   
