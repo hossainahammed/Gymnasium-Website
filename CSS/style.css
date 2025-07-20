@@ -375,8 +375,8 @@ span{
 
 
 .row{
-    background: var(--bg-color) ;
-      /* background: linear-gradient(to bottom right, rgba(122, 69, 255, 0.05), rgba(255, 255, 255, 0.02)); */
+    /* background: var(--bg-color) ; */
+      background: linear-gradient(to bottom right, rgba(122, 69, 255, 0.05), rgba(255, 255, 255, 0.02));
     border-radius: 26px;
     border: 1px solid transparent;
     /* box-shadow: 0 0 5px var(--main-color); */
