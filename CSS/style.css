@@ -18,6 +18,7 @@
     --main-color: #7a45ff;
     --third-color: rgb(255, 111, 0);
     --fourth-color:#B6F500;
+    --fifth-color: #d622c7;
 }
 
 html{
@@ -679,7 +680,7 @@ span{
 .close-btn {
   background: transparent;
   border: 2px solid var(--fourth-color);
-  color: ;
+  color:black ;
   padding: 8px 16px;
   border-radius: 8px;
   font-size: 14px;
@@ -1042,7 +1043,7 @@ span{
 }
 
 .box a:hover {
-  background: var(--third-color);
+  background: var(--fifth-color);
   color: #fff;
   box-shadow: 0 0 12px var(--third-color);
 }
