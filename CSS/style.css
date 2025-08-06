@@ -1116,6 +1116,56 @@ span{
   color: #ccc;
 }
 
+.footer {
+            background-color: #222;
+            color: white;
+            padding: 2rem 0;
+            margin-top: auto;
+            text-align: center;
+            width: 100%;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #444;
+            transition: all 0.3s ease;
+            color: white;
+            text-decoration: none;
+        }
+
+        .social a:hover {
+            background-color: #555;
+            transform: translateY(-3px);
+        }
+
+        /* Increased icon size */
+        .social i {
+            font-size: 2rem; /* 32px */
+        }
+
+        .copyright {
+            color: #aaa;
+            font-size: 1rem;
+        }
+
+        .copyright h1 {
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+
 /* ------------------------------------------------------------------Responsive Design-------------------------------------- */
 
 @media (max-width: 1200px) {
