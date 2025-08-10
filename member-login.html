@@ -3,29 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Login Form</title>
-  <link rel="stylesheet" href="CSS/admin-login.css">
+  <title>LoginForm</title>
+  <link rel="stylesheet" href="CSS/login.css">
  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <div class="container active">
 
           <div class="formBox login">
-      <form action="admin-login.php" method="POST" id="adminLoginForm">
-        <h1>Admin Login</h1>
+      <form action="member-login.php" method="POST">
+        <h1>Login</h1>
         <div class="inputBox">
-          <input type="text" id="adminloginUsername" name="adminloginUsername" placeholder="Admin Username" required>
+          <input type="text" id="loginUsername" name="loginUsername" placeholder="Username" required>
           <i class='bx bx-user' ></i>
         </div>
         <div class="inputBox">
-          <input type="password" id="adminloginPassword" name="adminloginPassword" placeholder="Admin Password" required>
-          <i class='bx bx-lock-alt toggle-password' ></i>
+          <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required>
+          <i class='bx bx-lock-alt 'onclick="togglePassword('loginPassword', this)" ></i>
         </div>
         <div class="forgotLink">
           <a href="#">Forgot Password?</a>
            </div>
-          <button type="submit" class="btn" style="background-color: red;">Login</button>
-
+          <button type="submit" class="btn">Login</button>
           <p>or login with social platforms</p>
           <div class="SocialIcons">
             <a href="#"><i class='bx bxl-facebook' ></i></a>
@@ -37,35 +36,25 @@
 
 
           <div class="formBox Register">
-      <form action="admin-register.php" method="POST" id="adminRegisterForm">
+       <form action="member-register.php" method="POST">
         <h1>Registration</h1>
         <div class="inputBox">
-          <input type="text" id="adminRegisterUsername" name="adminRegisterUsername" placeholder="Username" required>
+          <input type="text" id="registerUsername" name="registerUsername" placeholder="Username" required>
           <i class='bx bx-user' ></i>
         </div>
-
-        <div class="inputBox">
-          <input type="Email" id="adminRegisterEmail" name="AdminRegisterEmail" placeholder="Email" required>
+         <div class="inputBox">
+          <input type="Email" id="registerEmail" name="registerEmail" placeholder="Email" required>
           <i class='bx bx-envelope'></i>
         </div>
-
         <div class="inputBox">
-          <select id="adminRole" name="adminRole" required>
-            <option value="" disabled selected>Select Role</option>
-            <option value="trainer">Trainer</option>
-            <option value="senior-trainer">Senior Trainer</option>
-            <option value="co-trainer">Co-Trainer</option>
-          </select>
-          <i class='bx bx-user-pin'></i>
+           <input type="password" id="registerPassword" name="registerPassword" placeholder="Password" required>
+          <i class='bx bx-lock-alt'onclick="togglePassword('registerPassword', this)" ></i>
         </div>
-
         <div class="inputBox">
-          <input type="password" id="adminRegisterPassword" name="adminRegisterPassword" placeholder="Password" required>
-          <i class='bx bx-lock-alt toggle-password' ></i>
+           <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+           <i class='bx bx-lock' onclick="togglePassword('confirmPassword', this)"></i>
         </div>
-
           <button type="submit" class="btn">Register</button>
-
           <p>or register with social platforms</p>
           <div class="SocialIcons">
             <a href="#"><i class='bx bxl-facebook' ></i></a>
@@ -81,7 +70,6 @@
         <p>Don't have an account?</p>
         <button class="btn registerBtn">Register</button>
       </div>
-
       <div class="togglePanel toggleRight">
         <h1>Welcome Back!</h1>
         <p>Already have an account?</p>
@@ -90,6 +78,6 @@
     </div>
   </div>
 
-  <script src="JS/admin-validation.js"></script>
+  <script src="JS/login.js"></script>
 </body>
 </html>
